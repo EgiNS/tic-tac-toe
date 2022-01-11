@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.background {
+    background-color: #12181B;
+    height: 100vh;
+    padding-top: 1px;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 0;
+}
+
+.display {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.square {
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.square:hover {
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+.playerX {
+    color: #09C372;
+    font-weight: 700;
+}
+
+.playerO {
+    color: #498AFB;
+    font-weight: 700;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#reset {
+    background-color: #FF3860;
+    font-weight: bold;
+}
+
+#reset:hover, #resetModal:hover {
+    background-color: #ff3860cc;
+}
+
+.close:hover {
+    background-color: #498afbd7;
+}
+
+.modal {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.close {
+    background-color:#2E53C8;
+    color: white;
+    width: 40%;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#resetModal {
+    background-color: #FF3860;
+    color: white;
+    width: 40%;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#congrats {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.emoji {
+    font-size: 5em;
+}
+
+#winner {
+    font-size: 1.5em;
+}
+
+.player-turn {
+    display: flex;
+    flex-direction: row;
+    color: rgba(255, 255, 255, 0.603);
+    font-weight: 500;
+}
+
+.X-turn {
+    padding-right: 10px;
+}
+
+.O-turn {
+    padding-left: 10px;
+}
+
+.X-active {
+    color: #09C372;
+    border-right: 3px #09C372 solid;
+
+}
+
+.O-active {
+    color: #498AFB;
+    border-left: 3px #498AFB solid;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        width: 50vw;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+}

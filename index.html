@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <main class="background">
+        <section class="title">
+            <h1>Tic Tac Toe</h1>
+        </section>
+        <section class="display">
+            <!-- Player <span class="display-player playerX">X</span>'s turn -->
+            <div class="player-turn">
+                <div class="X-turn X-active">Player X</div>
+                <div class="O-turn">Player O</div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </section>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <!-- <span class="close">&times;</span> -->
+                <h4 id="congrats"></h4>
+                <div class="emoji"></div>
+                <p id="winner"></p>
+                <div class="modal-button">
+                    <div class="close">Close</div>
+                    <div id="resetModal">Restart</div>
+                </div>
+            </div>
+
+        </div>
+        <section class="controls">
+            <button id="reset">Reset Game</button>
+        </section>
+    </main>
+</body>
+
+</html>
